@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat&display=swap');
+
+:root {
+  --textGrey: #7f7f86;
+  --darkGrey: #151516;
+  --grey:rgb(21, 21, 22);
+  --lightgrey: #606060;
+  --responsiveText: calc(0.4em + 1.1vw);
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
 
 body {
   margin-left: auto;
   margin-right: auto;
-  background-color: #1F1626;
+  background-color: #fffdeb;
   color: white;
-  font-size: 12px;
+  font-size: var(--responsiveText);
   font-family: 'Roboto Mono', monospace;
   font-family: 'Roboto Mono', monospace;
   padding: 5px;
@@ -14,10 +25,31 @@ body {
   background-position: top right;
 }
 
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: calc(0.5em + 6.5vw);
+  padding-bottom: 5%;
+  color: var(--darkGrey);
+}
+
+
+
+p {
+  color: black;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
 .grid-logo {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: #873BDB;
+  background-color: #177700;
   padding: 5px;
   transform:
     perspective(75em) rotateX(18deg);
@@ -43,6 +75,12 @@ li {
 
 .invis {
   visibility: hidden;
+}
+
+.video-container {
+  display: flex;           /* Make the container a flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically (optional) */
 }
 
 
@@ -112,19 +150,19 @@ a:visited {
 }
 
 .item1 {
-  background-color: #db763b;
+  background-color: #4ba983;
 }
 
 .item2 {
-  background-color: #708DDB;
+  background-color: #177700;
 }
 
 .item3 {
-  background-color: #DBB570;
+  background-color: #003322;
 }
 
 .item4 {
-  background-color: #DB7085;
+  background-color: #0090a6;
 }
 
 .item5 {
@@ -140,11 +178,17 @@ a:visited {
 }
 
 h3 {
-  color: #873BDB;
+  color: #0192a7;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+
+  font-weight: 700;
+}
 }
 
 .pink {
-  color: #D94085;
+  color: #faa70e;
 }
 
 a {
@@ -228,7 +272,7 @@ hr.align::after {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #873BDB;
+  background-color: #177700;
   padding: 10px;
   transform:
     perspective(75em) rotateX(18deg);
@@ -245,11 +289,13 @@ hr.align::after {
 }
 
 .nav-item {
-  background-color: mediumpurple;
+  background-color: #fba910;
   padding: 10px;
   font-size: 20px;
   text-align: center;
   border: 1px solid #873BDB;
+      font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .grid-item:hover {
